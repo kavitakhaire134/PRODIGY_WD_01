@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Prodigy InfoTech</div>
+        <div class="navigation">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main >
+
+        <section class="firstsection" id="home">
+            <div class="homesection">
+                <h1>HOME</h1>
+            </div>
+
+            
+            <section id="about">
+                <div class="aboutsection">
+                    <h1>ABOUT</h1>
+                </div>
+                <section id="service">
+                    <div class="servicesection">
+                        <H1>SERVICES</H1>
+                    </div>
+                    <section id="contact">
+                        <div class="contactsection">
+                            <h1>CONTACT</h1>
+                        </div>
+                        <section id="feedback">
+                            <div class="feedbacksection">
+                                <h1>FEEDBACK</h1>
+                            </div>
+                        </section>
+
+    </main>
+    <script>
+        navigation = document.querySelector(".navigation");
+        navigation.onclick = function () {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+
+    </script>
+</body>
+
+</html>
